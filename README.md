@@ -11,7 +11,7 @@ yarn add sass-loader node-sass
 yarn add react-css-modules
 ```
 3. Webpack dev config
-```
+```JavaScript
 {
   test: /\.sass$/,
   use: [
@@ -54,7 +54,7 @@ yarn add react-css-modules
 },
 ```
 4. Webpack prod config
-```
+```JavaScript
 {
   test: /\.sass$/,
   use: ExtractTextPlugin.extract({
@@ -75,6 +75,6 @@ yarn add react-css-modules
 },
 ```
 5. path.js
-```
-line 44: appBuild: resolveApp('yourFolderName'), // build folder name
+```JavaScript
+appBuild: resolveApp('yourFolderName'), // line 44: build folder name
 ```
